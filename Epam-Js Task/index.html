@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </head>
+  <body>
+
+      <form action=""  class="login-form">
+        <h1>Register</h1>
+
+        <div class="txtb">
+          <input type="text" name="name2"  id="username" required>
+          <span data-placeholder="Name"></span>
+        </div>
+
+		<div class="txtb">
+          <input type="text" name="email2" id="emailid"  required>
+          <span data-placeholder="Email"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password" name="password2" id="password" required>
+          <span data-placeholder="Password"></span>
+        </div>
+
+		<div class="txtb">
+          <input type="text" name="mobile2" id="mobileno" required>
+          <span data-placeholder="Mobile"></span>
+        </div>
+
+		<strong>Gender</strong>
+		<input type="radio" name="gender" value="Male" id="male">Male
+		<input type="radio" name="gender" value="Female" id="female">Female
+		<br/><br/><br/>
+
+
+		<strong>Account Type:</strong>
+		<input type="radio" name="type" value="Student" id="student">Student
+		<input type="radio" name="type" value="Company" id="company">Company
+		<br/><br/><br/>
+
+
+
+		 <input type="button" class="logbtn" name="submit" value="Register"  id="register">
+
+
+        <br/>
+
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+      <script type="text/javascript" src="index.js">
+
+      </script>
+
+
+  </body>
+</html>
